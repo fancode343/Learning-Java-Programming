@@ -1,0 +1,25 @@
+{
+  "name": "Team Shared Codespace",
+  // Sets the base OS and pre-installed language
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+
+  // Automatically installs these extensions for anyone who opens the Codespace
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "github.vscode-pull-request-github"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  },
+
+  // Runs a command after the container is created (e.g., install dependencies)
+  "postCreateCommand": "npm install",
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000]
+}
