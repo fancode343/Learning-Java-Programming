@@ -42,7 +42,7 @@ Movie[] movies = new Movie[n]; 3. Use a loop to input the following details for 
 ○ Title
 ○ Duration (in minutes)
 ○ Genre
-○ TicketPrice 4. Create each Movie object using the constructor and store it in the array.
+○ TicketPrice 4. Create each Movie object using the constructor and store it in the array
 After input, use another loop to display all movie details using: displayInfo()
 
 Sample Output
