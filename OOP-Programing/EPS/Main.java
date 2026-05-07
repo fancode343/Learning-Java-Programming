@@ -1,18 +1,19 @@
 package EPS;
 
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner butang = new Scanner(System.in);
         System.out.print("Enter the number of employees: ");
         int n = butang.nextInt();
-        
+
         Employee[] employee = new Employee[n];
         FullTimeEmpoyee[] FTE = new FullTimeEmpoyee[n];
         PartTimeEmployee[] PTE = new PartTimeEmployee[n];
 
-        for(int i = 0; i<n; i++){
-            System.out.println(); 
+        for (int i = 0; i < n; i++) {
+            System.out.println();
             System.out.print("Type (1-Full Time, 2-Part Time): ");
             int type = butang.nextInt();
 
@@ -29,7 +30,7 @@ public class Main {
             int hoursWorked = 0;
             double hoursRate = 0;
 
-            switch(type) {
+            switch (type) {
                 case 1:
                     System.out.print("Overtime Huors: ");
                     overtimeHours = butang.nextInt();
@@ -50,13 +51,14 @@ public class Main {
             }
         }
         System.out.println("--PAYROLL SUMMARY--");
-        for(int i = 0; i<n; i++){
-            if(PTE[i] != null){
-                System.out.println(employee[i].getName()+" --> "+PTE[i].computeSalary());
-            } else if(FTE[i] != null) {
-                System.out.println(employee[i].getName()+" --> "+FTE[i].computeSalary());
+        for (int i = 0; i < n; i++) {
+            if (PTE[i] != null) {
+                System.out.println(employee[i].getName() + " --> " + PTE[i].computeSalary());
+            } else if (FTE[i] != null) {
+                System.out.println(employee[i].getName() + " --> " + FTE[i].computeSalary());
             }
         }
+        butang.close();
     }
 
 }
