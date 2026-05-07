@@ -1,4 +1,4 @@
-package RandomAlgorithm;
+package Algorithms.RandomAlgorithm;
 
 import java.util.*;
 
