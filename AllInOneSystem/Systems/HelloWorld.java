@@ -2,7 +2,7 @@ package AllInOneSystem.Systems;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        SO.P("Hello World");
     }
 
     public static String getName() {
