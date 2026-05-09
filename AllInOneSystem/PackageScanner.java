@@ -1,6 +1,7 @@
 package AllInOneSystem;
 
 import java.io.File;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,24 +11,31 @@ public class PackageScanner {
 
         List<Class<?>> classes = new ArrayList<>();
 
-        // convert package to path
         String path = packageName.replace('.', '/');
 
-        // get folder from classpath
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        ClassLoader classLoader =
+                Thread.currentThread().getContextClassLoader();
 
-        File directory = new File(classLoader.getResource(path).getFile());
+        URL resource = classLoader.getResource(path);
 
-        if (!directory.exists()) {
-            throw new Exception("Package folder not found: " + directory);
+        if (resource == null) {
+            throw new Exception("Package not found: " + packageName);
         }
 
-        // scan all files
+        File directory = new File(resource.getFile());
+
+        if (!directory.exists()) {
+            throw new Exception("Folder not found: " + directory);
+        }
+
         for (File file : directory.listFiles()) {
+
+            System.out.println("Found file: " + file.getName());
 
             if (file.getName().endsWith(".class")) {
 
-                String className = packageName + "." +
+                String className =
+                        packageName + "." +
                         file.getName().replace(".class", "");
 
                 Class<?> cls = Class.forName(className);
