@@ -61,7 +61,6 @@ public class Main {
         SO.Pln("Executing "+fileName+".java");
         SO.Pln("---------------------------------------");
         Thread.sleep(2000);
-
         method.invoke(null);
         SO.Pln("---------------------------------------");
         SO.Pln("Executed "+fileName+".java");
