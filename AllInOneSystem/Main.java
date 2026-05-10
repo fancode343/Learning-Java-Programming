@@ -63,6 +63,8 @@ public class Main {
         Thread.sleep(2000);
 
         method.invoke(null);
+        SO.Pln("---------------------------------------");
+        SO.Pln("Executed "+fileName+".java");
         input.close();
     }
 }
