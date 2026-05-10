@@ -61,7 +61,12 @@ public class Main {
         SO.Pln("Executing "+fileName+".java");
         SO.Pln("---------------------------------------");
         Thread.sleep(2000);
-        method.invoke(null);
+        try{
+            method.invoke(null);
+        }catch(Exception e){
+            SO.Pln("AIOS: Sorry Your System Can't Handle JOptionPane");
+        }
+        
         SO.Pln("---------------------------------------");
         SO.Pln("Executed "+fileName+".java");
         input.close();

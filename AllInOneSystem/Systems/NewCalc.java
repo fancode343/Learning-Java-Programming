@@ -74,7 +74,7 @@ public class NewCalc {
         NewCalc obj = new NewCalc();
         Scanner input = new Scanner(System.in);
          String esc = "";
-        String ms = JOptionPane.showInputDialog("'#' Reset\n'\\' Escape\nCurrent expression: ");
+        String ms = "";
          String rev = "";
          int x = 0;
         do{
