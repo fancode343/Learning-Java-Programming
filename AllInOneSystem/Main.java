@@ -1,5 +1,6 @@
 package AllInOneSystem;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
 
@@ -63,10 +64,11 @@ public class Main {
         Thread.sleep(2000);
         try{
             method.invoke(null);
-        }catch(Exception e){
+        }catch(InvocationTargetException e){
             SO.Pln("AIOS: Sorry Your System Can't Handle JOptionPane");
+        }catch(Exception er){
+            SO.Pln("AIOS: "+er);
         }
-        
         SO.Pln("---------------------------------------");
         SO.Pln("Executed "+fileName+".java");
         input.close();
