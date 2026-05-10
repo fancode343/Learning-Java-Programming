@@ -1,7 +1,33 @@
-package Algorithms.RandomAlgorithm;
+package AllInOneSystem.Systems;
 
+import java.util.*;
 
-public class RandomNumber {
+public class Random {
+    public static void main() {
+        Scanner butang = new Scanner(System.in);
+        int random = RandomNumber.randomNum(1, 10);
+        System.out.print("Guest the number between 1 to 10: ");
+        int guest = butang.nextInt();
+        if (guest == random) {
+            System.out.println("Congratulations, You Guessed The Number");
+        } else {
+            System.out.println("Wrong! The Number is " + random);
+        }
+        int a = 0;
+        System.out.println("Random Numbers: ");
+        while (a < 10) {
+            System.out.print(RandomNumber.randomNum(1, 10) + ", ");
+            a++;
+        }
+        System.out.println();
+    }
+
+    public static String getName() {
+        return "Random Algorithm V1";
+    }
+}
+
+class RandomNumber {
     public static int randomNum(int Start, int End) {
         if (Start > End) {
             System.out.println("Error, Please use valid Method Parameter. randomNum(Min, Max)");

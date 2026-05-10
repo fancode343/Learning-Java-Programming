@@ -16,7 +16,11 @@ public class Main {
 
         int arrlength = 0;
         for (Class<?> cls : classes) {
-            arrlength++;
+            try{
+                Method method = cls.getMethod("getName");
+                method.invoke(null);
+                arrlength++;
+            }catch(NoSuchMethodException e){}
             cls.getNestHost();
         }
         Object Systems[][] = new Object[arrlength][3]; // {{classname, System Name, number}, {classname, System Name,
@@ -24,6 +28,7 @@ public class Main {
 
         int index = 0;
         for (Class<?> cls : classes) {
+            try{
             Systems[index][0] = cls.getName();
             // getname
             Method method = cls.getMethod("getName");
@@ -32,6 +37,7 @@ public class Main {
             Systems[index][2] = index;
             SO.Pln((index + 1) + " - " + name);
             index++;
+            }catch(NoSuchMethodException e){}
         }
         int choice = 0;
 
