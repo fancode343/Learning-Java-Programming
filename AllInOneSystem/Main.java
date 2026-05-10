@@ -1,29 +1,57 @@
 package AllInOneSystem;
 
 import java.lang.reflect.Method;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
         List<Class<?>> classes = PackageScanner.getClasses("AllInOneSystem.Systems");
 
         SO.Pln("-----------ALL-IN-ONE-SYSTEM-----------");
         Thread.sleep(1000);
-        SO.Pln("-");
+        SO.Pln("- Listed Systems: ");
         Thread.sleep(1000);
 
-
+        int arrlength = 0;
         for (Class<?> cls : classes) {
-            SO.Pln("Class: " + cls.getName());
-
-            //getname
-            Method method = cls.getMethod("getName");
-            String result = (String) method.invoke(null);
-
-            
-            SO.Pln("Result: " + result);
-            SO.Pln();
+            arrlength++;
         }
+        Object Systems[][] = new Object[arrlength][3]; // {{classname, System Name, number}, {classname, System Name,
+                                                       // number}}
+
+        int index = 0;
+        for (Class<?> cls : classes) {
+            Systems[index][0] = cls.getName();
+            // getname
+            Method method = cls.getMethod("getName");
+            String name = (String) method.invoke(null);
+            Systems[index][1] = name;
+            Systems[index][2] = index;
+            SO.Pln((index + 1) + " - " + name);
+            index++;
+        }
+        int choice = 0;
+
+        while (choice <= 0 || choice > index) {
+            SO.P("Choose a System, Between 1 - " + index + ": ");
+            choice = input.nextInt();
+            if (choice <= 0 || choice > index) {
+                SO.Pln("Error, Please Select Valid Number");
+            }
+        }
+        choice -= 1;
+        Class<?> cls = Class.forName((String) Systems[choice][0]);
+        Method method = cls.getMethod("main");
+        SO.Pln();
+        String c = (String)Systems[choice][0];
+        String fileName = c.substring(23);
+        SO.Pln("Executing "+fileName+".java");
+        SO.Pln("---------------------------------------");
+        Thread.sleep(2000);
+
+        method.invoke(null);
+        input.close();
     }
 }

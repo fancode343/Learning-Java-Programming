@@ -1,11 +1,11 @@
 package AllInOneSystem.Systems;
 
 public class HelloWorld {
-    public static void main(String[] args) {
-        SO.P("Hello World");
+    public static void main() {
+        SO.Pln("Hello World");
     }
 
     public static String getName() {
-        return "Hello World! ";
+        return "Print Hello World";
     }
 }

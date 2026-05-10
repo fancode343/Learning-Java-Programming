@@ -14,6 +14,6 @@ public class SO {
     }
 
     public static String getName() {
-        return "System.out.print Shortcut";
+        return "SOP Shortcut";
     }
 }
