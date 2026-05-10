@@ -20,5 +20,6 @@ public class Random {
             a++;
         }
         System.out.println();
+        butang.close();
     }
 }
