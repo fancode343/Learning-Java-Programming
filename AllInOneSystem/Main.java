@@ -17,6 +17,7 @@ public class Main {
         int arrlength = 0;
         for (Class<?> cls : classes) {
             arrlength++;
+            cls.getNestHost();
         }
         Object Systems[][] = new Object[arrlength][3]; // {{classname, System Name, number}, {classname, System Name,
                                                        // number}}
@@ -34,11 +35,16 @@ public class Main {
         }
         int choice = 0;
 
-        while (choice <= 0 || choice > index) {
-            SO.P("Choose a System, Between 1 - " + index + ": ");
-            choice = input.nextInt();
-            if (choice <= 0 || choice > index) {
+        while (choice <= 0 || choice > index ) {
+            try{
+                SO.P("Choose a System Between 1 - " + index + ": ");
+                choice = input.nextInt();
+                if (choice <= 0 || choice > index) {
+                    SO.Pln("Error, Please Select Valid Number");
+                }
+            }catch(InputMismatchException e){
                 SO.Pln("Error, Please Select Valid Number");
+                input.nextLine();
             }
         }
         choice -= 1;
