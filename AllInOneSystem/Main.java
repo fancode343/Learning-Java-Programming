@@ -18,7 +18,7 @@ public class Main {
         int arrlength = 0;
         for (Class<?> cls : classes) {
             try {
-                Method method = cls.getMethod("getName");
+                Method method = cls.getMethod("getSystemName");
                 method.invoke(null);
                 arrlength++;
             } catch (NoSuchMethodException e) {

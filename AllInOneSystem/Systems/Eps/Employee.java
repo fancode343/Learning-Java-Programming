@@ -1,7 +1,5 @@
-package AllInOneSystem.Systems.EPS;
+package AllInOneSystem.Systems.Eps;
 public class Employee {
-
-
     private String name;
     private double baseSalary;
     public Employee(String name, double baseSalary) {

@@ -1,9 +1,17 @@
-package AllInOneSystem.Systems.EPS;
+package AllInOneSystem.Systems.Eps;
 
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+
+    public static String getSystemName() {
+        return "Employee Payroll System";
+    }
+
+    public static String getSystemAuthor() {
+        return "fancode343";
+    }
+    public static void main() {
         Scanner butang = new Scanner(System.in);
         System.out.print("Enter the number of employees: ");
         int n = butang.nextInt();

@@ -1,4 +1,4 @@
-package AllInOneSystem.Systems.EPS;
+package AllInOneSystem.Systems.Eps;
 
 public class PartTimeEmployee extends Employee{
     private int hoursWorked;

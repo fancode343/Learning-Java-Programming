@@ -1,4 +1,4 @@
-package AllInOneSystem.Systems.EPS;
+package AllInOneSystem.Systems.Eps;
 
 public class FullTimeEmpoyee extends Employee {
     private int overtimeHours;

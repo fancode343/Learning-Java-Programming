@@ -3,10 +3,10 @@ package AllInOneSystem.Systems.RandomAlgorithm;
 import java.util.*;
 
 public class Random {
-    public static String getName() {
+    public static String getSystemName() {
         return "Random Algorithm";
     }
-    public static String getAuthor() {
+    public static String getSystemAuthor() {
         return "fancode343";
     }
     public static void main() {
