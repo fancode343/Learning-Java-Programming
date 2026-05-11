@@ -63,7 +63,7 @@ public class Main {
         SO.Pln();
         String c = (String) Systems[choice][0];
         String fileName = c.substring(23);
-        SO.Pln("Executing " + fileName + ".java");
+        SO.Pln("Executing " + fileName + "");
         SO.Pln("Name: " + ((String) Systems[choice][1]));
         SO.Pln("Author: " + (String) Systems[choice][3]);
         SO.Pln("---------------------------------------");
@@ -76,7 +76,7 @@ public class Main {
             SO.Pln("AIOS: " + er);
         }
         SO.Pln("---------------------------------------");
-        SO.Pln("Executed " + fileName + ".java");
+        SO.Pln("Executed " + fileName + "");
         input.close();
     }
 }
