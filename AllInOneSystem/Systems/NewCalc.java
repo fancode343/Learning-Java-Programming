@@ -6,7 +6,9 @@ public class NewCalc {
     public static String getName() {
         return "Little Advance Calculator By Gab";
     }
-
+    public static String getAuthor() {
+        return "Gabriel";
+    }
     public static 
     double result = 0.0;
    public void var(){

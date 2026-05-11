@@ -3,6 +3,13 @@ package AllInOneSystem.Systems;
 import java.util.*;
 
 public class Random {
+
+    public static String getName() {
+        return "Random Algorithm V1";
+    }
+    public static String getAuthor() {
+        return "Fancode343";
+    }
     public static void main() {
         Scanner butang = new Scanner(System.in);
         int random = RandomNumber.randomNum(1, 10);
@@ -20,10 +27,6 @@ public class Random {
             a++;
         }
         System.out.println();
-    }
-
-    public static String getName() {
-        return "Random Algorithm V1";
     }
 }
 

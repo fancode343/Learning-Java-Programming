@@ -24,7 +24,7 @@ public class Main {
             }catch(NoSuchMethodException e){}
             cls.getNestHost();
         }
-        Object Systems[][] = new Object[arrlength][3]; // {{classname, System Name, number}, {classname, System Name,  // number}}
+        Object Systems[][] = new Object[arrlength][3]; // {{classname, System Name, number, Author}}
 
         int index = 0;
         for (Class<?> cls : classes) {
@@ -65,7 +65,7 @@ public class Main {
         try{
             method.invoke(null);
         }catch(InvocationTargetException e){
-            SO.Pln("AIOS: Sorry Your System Can't Handle JOptionPane");
+            SO.Pln("AIOS: Sorry Your System Can't Handle JOptionPane, JFRame and any Graphics");
         }catch(Exception er){
             SO.Pln("AIOS: "+er);
         }
