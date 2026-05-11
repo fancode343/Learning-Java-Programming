@@ -22,7 +22,6 @@ public class Main {
                 method.invoke(null);
                 arrlength++;
             }catch(NoSuchMethodException e){}
-            cls.getNestHost();
         }
         Object Systems[][] = new Object[arrlength][4]; // {{classname, System Name, number, Author}}
 
