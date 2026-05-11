@@ -3,7 +3,16 @@ package AllInOneSystem.Systems;
 import java.util.Scanner;
 
 public class SO {
-    public static void main(){
+
+    public static String getName() {
+        return "SOP Shortcut";
+    }
+
+    public static String getAuthor() {
+        return "fancode343";
+    }
+
+    public static void main() {
         Scanner input = new Scanner(System.in);
         SO.P("Enter text to print: ");
         String text = input.nextLine();
@@ -17,6 +26,7 @@ public class SO {
         SO.Pln(text);
         input.close();
     }
+
     public static void P(Object ob) {
         System.out.print(ob);
     }
@@ -29,7 +39,4 @@ public class SO {
         System.out.println();
     }
 
-    public static String getName() {
-        return "SOP Shortcut";
-    }
 }
