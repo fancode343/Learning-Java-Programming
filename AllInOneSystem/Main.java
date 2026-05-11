@@ -24,7 +24,7 @@ public class Main {
             }catch(NoSuchMethodException e){}
             cls.getNestHost();
         }
-        Object Systems[][] = new Object[arrlength][3]; // {{classname, System Name, number, Author}}
+        Object Systems[][] = new Object[arrlength][4]; // {{classname, System Name, number, Author}}
 
         int index = 0;
         for (Class<?> cls : classes) {
@@ -32,9 +32,12 @@ public class Main {
             Systems[index][0] = cls.getName();
             // getname
             Method method = cls.getMethod("getName");
+            Method method1 = cls.getMethod("getAuthor");
             String name = (String) method.invoke(null);
+            String author = (String) method1.invoke(null);
             Systems[index][1] = name;
             Systems[index][2] = index;
+            Systems[index][3] = author;
             SO.Pln((index + 1) + " - " + name);
             index++;
             }catch(NoSuchMethodException e){}
@@ -60,6 +63,8 @@ public class Main {
         String c = (String)Systems[choice][0];
         String fileName = c.substring(23);
         SO.Pln("Executing "+fileName+".java");
+        SO.Pln("Name: "+((String)Systems[choice][1]));
+        SO.Pln("Author: "+(String)Systems[choice][3]);
         SO.Pln("---------------------------------------");
         Thread.sleep(2000);
         try{
