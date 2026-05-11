@@ -4,10 +4,10 @@ package AllInOneSystem.Systems.MovieSystem;
 import java.util.*;
 
 public class Main {
-    public static String getName() {
+    public static String getSystemName() {
         return "Movie System";
     }
-    public static String getAuthor() {
+    public static String getSystemAuthor() {
         return "fancode343";
     }
     public static void main() {

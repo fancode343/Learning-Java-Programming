@@ -3,10 +3,10 @@ package AllInOneSystem.Systems;
 import javax.swing.*;
 import java.util.*;
 public class NewCalc {
-    public static String getName() {
+    public static String getSystemName() {
         return "Little Advance Calculator By Gab";
     }
-    public static String getAuthor() {
+    public static String getSystemAuthor() {
         return "Gabriel";
     }
     public static 

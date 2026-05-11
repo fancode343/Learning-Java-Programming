@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PackageScanner {
-
     public static List<Class<?>> getClasses(String packageName) throws Exception {
         List<Class<?>> classes = new ArrayList<>();
         String path = packageName.replace('.', '/');

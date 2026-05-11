@@ -31,8 +31,8 @@ public class Main {
             try {
                 Systems[index][0] = cls.getName();
                 // getname
-                Method method = cls.getMethod("getName");
-                Method method1 = cls.getMethod("getAuthor");
+                Method method = cls.getMethod("getSystemName");
+                Method method1 = cls.getMethod("getSystemAuthor");
                 String name = (String) method.invoke(null);
                 String author = (String) method1.invoke(null);
                 Systems[index][1] = name;

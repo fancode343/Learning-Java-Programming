@@ -1,11 +1,11 @@
 package AllInOneSystem.Systems;
 
 public class HelloWorld {
-    public static String getName() {
+    public static String getSystemName() {
         return "Print Hello World";
     }
 
-    public static String getAuthor() {
+    public static String getSystemAuthor() {
         return "*";
     }
 

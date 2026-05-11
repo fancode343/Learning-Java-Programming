@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class SO {
 
-    public static String getName() {
+    public static String getSystemName() {
         return "SOP Shortcut";
     }
 
-    public static String getAuthor() {
+    public static String getSystemAuthor() {
         return "fancode343";
     }
 
