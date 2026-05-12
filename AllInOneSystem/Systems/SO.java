@@ -44,6 +44,7 @@ public class SO {
             System.out.print(arr[i] + " ");
         }
         System.out.println(); // Print a newline after the array contents
+        System.out.println();
     }
     public static void P_arr(double[] arr) {
         System.out.println("Array Contents:");
@@ -51,6 +52,7 @@ public class SO {
             System.out.print(arr[i] + " ");
         }
         System.out.println(); // Print a newline after the array contents
+        System.out.println();
     }
 
 }
