@@ -10,6 +10,7 @@ public class SelectionSort {
     }
     public static void main(String[] args) {
         int data[] = {40, 50, 20, 2, 5, 7, 9};
+        AllInOneSystem.Systems.SO.P_arr(data);
         for (int i = 0; i<data.length; i++) {
             int temp = 0;
             for (int j = 0; j<data.length; j++) {

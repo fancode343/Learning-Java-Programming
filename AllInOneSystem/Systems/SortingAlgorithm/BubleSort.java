@@ -1,5 +1,7 @@
 package AllInOneSystem.Systems.SortingAlgorithm;
 
+import AllInOneSystem.SO;
+
 public class BubleSort {
     public static String getSystemName() {
         return "Bubble Sort Algorithm";
@@ -9,6 +11,7 @@ public class BubleSort {
     }
     public static void main() {
         int data[] = {40, 50, 20, 2, 5, 7, 9};
+        AllInOneSystem.Systems.SO.P_arr(data);
         for (int i = 0; i<data.length; i++) {
             int temp = 0;
             for (int j = 0; j<data.length-1-i; j++) {

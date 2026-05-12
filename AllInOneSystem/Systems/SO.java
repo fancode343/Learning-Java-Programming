@@ -38,10 +38,17 @@ public class SO {
     public static void Pln() {
         System.out.println();
     }
-    public static void P_arr(Object[] arr) {
+    public static void P_arr(int[] arr) {
         System.out.println("Array Contents:");
-        for (Object ob : arr) {
-            System.out.print(ob + " ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println(); // Print a newline after the array contents
+    }
+    public static void P_arr(double[] arr) {
+        System.out.println("Array Contents:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println(); // Print a newline after the array contents
     }

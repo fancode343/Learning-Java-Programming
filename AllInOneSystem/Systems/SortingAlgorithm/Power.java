@@ -34,6 +34,7 @@ int data[] = { //Data
     603, 38, 17, 450, 67, 725, 35, 29, 782, 94,
     51, 360, 12, 48, 0, 670, 20, 59, 244, 98, 310, -1, -60
 };
+AllInOneSystem.Systems.SO.P_arr(data);
         int track = 1;
         int temp = 0;
         for (int i = 0; i < data.length-1; i++){

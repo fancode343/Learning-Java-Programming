@@ -36,9 +36,8 @@ double st[] = { //Data
     603, 38, 17, 450, 67, 725, 35, 29, 782, 94,
     51, 360, 12, 48, 0, 670, 20, 59, 244, 98, 310, -1, -60
 };
-
-
-        sorting:
+AllInOneSystem.Systems.SO.P_arr(st);
+    sorting:
         while(true){
             for (int i = 0; i < st.length-1;i++){
                 if(st[i] > st[i+1]){
