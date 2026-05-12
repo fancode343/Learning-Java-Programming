@@ -65,7 +65,7 @@ public class Main {
         String fileName = c.substring(23);
         SO.Pln("Executing " + fileName + "");
         SO.Pln("Name: " + ((String) Systems[choice][1]));
-        SO.Pln("Author: " + (String) Systems[choice][3]);
+        SO.Pln("Code By: " + (String) Systems[choice][3]);
         SO.Pln("---------------------------------------");
         Thread.sleep(2000);
         try {
