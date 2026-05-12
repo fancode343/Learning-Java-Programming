@@ -13,7 +13,7 @@ public class CrackStone {
     public static String getSystemAuthor() {
         return "fancode343";
     }
-    public static void main(String[] args) {
+    public static void main() {
       int arr[] = { //Data
     153, 87, 12, 4990, 64, 230, 7, 315, 98, 56,
     4021, 76, 14, 67, 289, 53, 903, 21, 45, 72,
