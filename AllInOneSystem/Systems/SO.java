@@ -39,9 +39,11 @@ public class SO {
         System.out.println();
     }
     public static void P_arr(Object[] arr) {
+        System.out.println("Array Contents:");
         for (Object ob : arr) {
             System.out.print(ob + " ");
         }
+        System.out.println(); // Print a newline after the array contents
     }
 
 }
