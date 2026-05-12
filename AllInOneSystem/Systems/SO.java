@@ -38,5 +38,10 @@ public class SO {
     public static void Pln() {
         System.out.println();
     }
+    public static void P_arr(Object[] arr) {
+        for (Object ob : arr) {
+            System.out.print(ob + " ");
+        }
+    }
 
 }
