@@ -43,6 +43,11 @@ public class SO {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
+        System.out.print("Press Enter to continue...");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine(); 
+        scanner.close();
         System.out.println(); // Print a newline after the array contents
         System.out.println();
     }
@@ -51,6 +56,10 @@ public class SO {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println("Press Enter to continue...");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine(); 
+        scanner.close();
         System.out.println(); // Print a newline after the array contents
         System.out.println();
     }
