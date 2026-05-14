@@ -7,7 +7,7 @@
     - System (A System Folder)
         - ```Contains All System Classes and Packages```
 
-## System Identifer
+## System Identifier
 
 - **Add Package**
     - ```package AllInOneSystem.Systems;```
