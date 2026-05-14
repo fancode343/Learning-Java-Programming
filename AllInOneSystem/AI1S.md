@@ -13,7 +13,20 @@
     - ```package AllInOneSystem.Systems;```
     - If One Package
         - package ```AllInOneSystem.Systems.{Your Package Name and Class}```
-- **
+- **Add this on you main file**
+    ```
+    public static String getSystemName() {
+        return "You System Name";
+    }
+
+    public static String getSystemAuthor() {
+        return "Your Name";
+    }
+    ```
+- **Take Note:**
+    - main method must be ```main()```
+    - Remove ```String[] Args```
+    - Otherwise the System will not work
 
 
 
