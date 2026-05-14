@@ -3,4 +3,7 @@
 - **AllInOneSystem** (Package)
     - *Main Class* (Contains the main method)
     - *PackageScanner Class* (Contains the Class Scanner to whole package)
-    - *PackageScanner Class* (Contains the Class Scanner to whole package)
+    - *SO Class* (Shorten  ```System.out.print()```)
+    - System (A System Folder)
+        - ```Contains All System Classes and Packages```
+        - Codes
