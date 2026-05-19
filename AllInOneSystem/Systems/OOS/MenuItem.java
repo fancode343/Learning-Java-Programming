@@ -1,4 +1,4 @@
-package OOS;
+package AllInOneSystem.Systems.OOS;
 
 public class MenuItem {
     private String name;
