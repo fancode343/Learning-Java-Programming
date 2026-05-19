@@ -1,7 +1,13 @@
 package AllInOneSystem.Systems.OOS;
 import java.util.Scanner;
 public class Main {
-    public static void main(String[] args){
+    public static String getSystemName() {
+        return "Order Online System";
+    }
+    public static String getSystemAuthor() {
+        return "fancode343";
+    }
+    public static void main(){
     Scanner input = new Scanner(System.in);
     System.out.print("Enter number of orders: ");
     int n = input.nextInt();
