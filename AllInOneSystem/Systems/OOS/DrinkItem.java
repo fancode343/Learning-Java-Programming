@@ -1,4 +1,4 @@
-package OOS;
+package AllInOneSystem.Systems.OOS;
 
 public class DrinkItem extends MenuItem{
     private int size;
