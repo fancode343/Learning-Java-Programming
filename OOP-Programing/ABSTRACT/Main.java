@@ -7,5 +7,7 @@ public class Main{
     System.out.println("Animal Sounds: ");
     System.out.println("Dog: "+d);
     System.out.println("Cat: "+c);
+    System.out.println("Monkey: "+m);
+    System.out.println("Snake: "+s);
   }
 }
