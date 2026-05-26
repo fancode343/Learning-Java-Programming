@@ -6,5 +6,6 @@ public class Main{
     Snake s = new Snake();
     System.out.println("Animal Sounds: ");
     System.out.println("Dog: "+d);
+    System.out.println("Cat: "+c);
   }
 }
