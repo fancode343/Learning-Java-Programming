@@ -11,6 +11,18 @@ public class Armstrong{
     Scanner input = new Scanner(System.in);
     System.out.print("Enter number: ");
     int userinput = input.nextInt();
-    
+    String newUnserInput = Integer.toString(userinput);
+    int total = 0;
+    for(int i = 0;i<newUnserInput.length(); i++){
+      String temp = Character.toString(newUnserInput.charAt(i));
+      total += Math.pow(Integer.parseInt(temp), newUnserInput.length());
+    }
+    System.out.println(total);
+    if(total == userinput){
+      System.out.println(true+" "+userinput+" is an Armstrong number.");
+    }else{
+      System.out.println(false+" "+userinput+" is not an Armstrong number.");
+    }
+  input.close();
   }
 }
